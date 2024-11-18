@@ -30,7 +30,119 @@ async function loadDropdowns() {
         airports.forEach(airport => {
             const optionOrigin = document.createElement("option");
             const optionDestination = document.createElement("option");
-            optionOrigin.value = airport;
+            optionOrigin.value = [
+  {
+    "nameES": "Afganistán",
+    "nameEN": "Afghanistan",
+    "iso2": "AF",
+    "iso3": "AFG",
+    "phoneCode": "93"
+  },
+  {
+    "nameES": "Albania",
+    "nameEN": "Albania",
+    "iso2": "AL",
+    "iso3": "ALB",
+    "phoneCode": "355"
+  },
+  {
+    "nameES": "Alemania",
+    "nameEN": "Germany",
+    "iso2": "DE",
+    "iso3": "DEU",
+    "phoneCode": "49"
+  },
+  {
+    "nameES": "Andorra",
+    "nameEN": "Andorra",
+    "iso2": "AD",
+    "iso3": "AND",
+    "phoneCode": "376"
+  },
+  {
+    "nameES": "Angola",
+    "nameEN": "Angola",
+    "iso2": "AO",
+    "iso3": "AGO",
+    "phoneCode": "244"
+  },
+  {
+    "nameES": "Anguila",
+    "nameEN": "Anguilla",
+    "iso2": "AI",
+    "iso3": "AIA",
+    "phoneCode": "1 264"
+  },
+  {
+    "nameES": "Antártida",
+    "nameEN": "Antarctica",
+    "iso2": "AQ",
+    "iso3": "ATA",
+    "phoneCode": "672"
+  },
+  {
+    "nameES": "Antigua y Barbuda",
+    "nameEN": "Antigua and Barbuda",
+    "iso2": "AG",
+    "iso3": "ATG",
+    "phoneCode": "1 268"
+  },
+  {
+    "nameES": "Arabia Saudita",
+    "nameEN": "Saudi Arabia",
+    "iso2": "SA",
+    "iso3": "SAU",
+    "phoneCode": "966"
+  },
+  {
+    "nameES": "Argelia",
+    "nameEN": "Algeria",
+    "iso2": "DZ",
+    "iso3": "DZA",
+    "phoneCode": "213"
+  },
+  {
+    "nameES": "Argentina",
+    "nameEN": "Argentina",
+    "iso2": "AR",
+    "iso3": "ARG",
+    "phoneCode": "54"
+  },
+  {
+    "nameES": "Armenia",
+    "nameEN": "Armenia",
+    "iso2": "AM",
+    "iso3": "ARM",
+    "phoneCode": "374"
+  },
+  {
+    "nameES": "Aruba",
+    "nameEN": "Aruba",
+    "iso2": "AW",
+    "iso3": "ABW",
+    "phoneCode": "297"
+  },
+  {
+    "nameES": "Australia",
+    "nameEN": "Australia",
+    "iso2": "AU",
+    "iso3": "AUS",
+    "phoneCode": "61"
+  },
+  {
+    "nameES": "Austria",
+    "nameEN": "Austria",
+    "iso2": "AT",
+    "iso3": "AUT",
+    "phoneCode": "43"
+  },
+  {
+    "nameES": "Azerbaiyán",
+    "nameEN": "Azerbaijan",
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "phoneCode": "994"
+  }];
             optionDestination.value = airport;
             optionOrigin.textContent = airport;
             optionDestination.textContent = airport;
