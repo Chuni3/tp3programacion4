@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Vuelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Reserva de Vuelo</h1>
+        <form id="flightForm">
+            <fieldset>
+                <legend>Datos del Pasajero</legend>
+                <label for="fullName">Nombre Completo:</label>
+                <input type="text" id="fullName" placeholder="Ejemplo: Juan Pérez" required>
+                <small class="error-message"></small>
+
+                <label for="passport">Número de Pasaporte/ID:</label>
+                <input type="text" id="passport" placeholder="Ejemplo: A12345678" required>
+                <small class="error-message"></small>
+
+                <label for="birthDate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthDate" required>
+                <small class="error-message"></small>
+
+                <label for="nationality">Nacionalidad:</label>
+                <select id="nationality" required>
+                    <option value="">Seleccione un país</option>
+                    <!-- Añadir países -->
+                </select>
+                <small class="error-message"></small>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del Vuelo</legend>
+                <label for="origin">Ciudad de Origen:</label>
+                <select id="origin" required>
+                    <option value="">Seleccione una ciudad</option>
+                    <!-- Añadir opciones -->
+                </select>
+                <small class="error-message"></small>
+
+                <label for="destination">Ciudad de Destino:</label>
+                <select id="destination" required>
+                    <option value="">Seleccione una ciudad</option>
+                    <!-- Añadir opciones -->
+                    
+                </select>
+                <small class="error-message"></small>
+
+                <label for="departureDate">Fecha de Salida:</label>
+                <input type="date" id="departureDate" required>
+                <small class="error-message"></small>
+
+                <label for="returnDate">Fecha de Regreso (opcional):</label>
+                <input type="date" id="returnDate">
+                <small class="error-message"></small>
+
+                <label for="flightClass">Clase de Vuelo:</label>
+                <select id="flightClass" required>
+                    <option value="">Seleccione una clase</option>
+                    <option value="economy">Económica</option>
+                    <option value="business">Ejecutiva</option>
+                    <option value="firstClass">Primera Clase</option>
+                </select>
+                <small class="error-message"></small>
+
+                <label for="tickets">Número de Boletos:</label>
+                <input type="number" id="tickets" min="1" max="10" required>
+                <small class="error-message"></small>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Pago</legend>
+                <label for="cardNumber">Número de Tarjeta de Crédito:</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9101 1121" required>
+                <small class="error-message"></small>
+
+                <label for="expiryDate">Fecha de Vencimiento (MM/AA):</label>
+                <input type="text" id="expiryDate" placeholder="MM/AA" required>
+                <small class="error-message"></small>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <small class="error-message"></small>
+
+                <label for="cardName">Nombre en la Tarjeta:</label>
+                <input type="text" id="cardName" required>
+                <small class="error-message"></small>
+            </fieldset>
+
+            <button type="submit" id="submitButton" disabled>Reservar Vuelo</button>
+            <small id="formFeedback"></small>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
