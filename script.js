@@ -30,8 +30,26 @@ async function loadDropdowns() {
         airports.forEach(airport => {
             const optionOrigin = document.createElement("option");
             const optionDestination = document.createElement("option");
-            optionOrigin.value = airport;
-            optionDestination.value = airport;
+            optionOrigin.value = [
+    { name: "Argentina" },
+    { name: "Brasil" },
+    { name: "Chile" },
+    { name: "Estados Unidos" },
+    { name: "España" },
+    { name: "México" },
+    { name: "Canadá" },
+    { name: "Reino Unido" },
+];
+            optionDestination.value = [
+    { name: "Argentina" },
+    { name: "Brasil" },
+    { name: "Chile" },
+    { name: "Estados Unidos" },
+    { name: "España" },
+    { name: "México" },
+    { name: "Canadá" },
+    { name: "Reino Unido" },
+];
             optionOrigin.textContent = [
     { name: "Argentina" },
     { name: "Brasil" },
