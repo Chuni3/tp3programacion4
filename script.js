@@ -17,6 +17,34 @@ const cardName = document.getElementById("cardName");
 const submitButton = document.getElementById("submitButton");
 const formFeedback = document.getElementById("formFeedback");
 
+// Lista de países
+const countriesList = [
+    "Argentina",
+    "Brasil",
+    "Chile",
+    "Estados Unidos",
+    "España",
+    "México",
+    "Canadá",
+    "Reino Unido",
+    "Italia",
+    "Alemania",
+];
+
+// Función para llenar el select de países
+function populateCountries() {
+    const nationalitySelect = document.getElementById("nationality");
+    countriesList.forEach(country => {
+        const option = document.createElement("option");
+        option.value = country; // Valor del país
+        option.textContent = country; // Texto visible para el usuario
+        nationalitySelect.appendChild(option); // Añadir la opción al select
+    });
+}
+
+// Llamar a la función cuando cargue la página
+document.addEventListener("DOMContentLoaded", populateCountries);
+
 // URLs para cargar datos JSON
 const airportsURL = "https://jsonformatter.org/bb077f";
 const countriesURL = "https://gist.github.com/eduardolat/b2a252d17b17363fab0974bb0634d259";
