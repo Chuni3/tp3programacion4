@@ -32,8 +32,26 @@ async function loadDropdowns() {
             const optionDestination = document.createElement("option");
             optionOrigin.value = airport;
             optionDestination.value = airport;
-            optionOrigin.textContent = airport;
-            optionDestination.textContent = airport;
+            optionOrigin.textContent = [
+    { name: "Argentina" },
+    { name: "Brasil" },
+    { name: "Chile" },
+    { name: "Estados Unidos" },
+    { name: "España" },
+    { name: "México" },
+    { name: "Canadá" },
+    { name: "Reino Unido" },
+];
+            optionDestination.textContent = [
+    { name: "Argentina" },
+    { name: "Brasil" },
+    { name: "Chile" },
+    { name: "Estados Unidos" },
+    { name: "España" },
+    { name: "México" },
+    { name: "Canadá" },
+    { name: "Reino Unido" },
+];
             origin.appendChild(optionOrigin);
             destination.appendChild(optionDestination);
         });
